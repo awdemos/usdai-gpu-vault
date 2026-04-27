@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "USDai GPU Vault",
+  "version": "0.1.0",
+  "identifier": "ai.usd.gpu.vault",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "USDai GPU Vault",
+        "width": 1280,
+        "height": 800,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src 'self' https://api.devnet.solana.com https://mainnet.helius-rpc.com ws://localhost:8900; img-src 'self' data:;"
+    }
+  },
+  "bundle": {
+    "active": false
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    }
+  }
+}

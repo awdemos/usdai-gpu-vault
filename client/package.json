@@ -1,0 +1,18 @@
+{
+  "name": "@usdai/gpu-vault-client",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.91.0",
+    "@solana/spl-token": "^0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
